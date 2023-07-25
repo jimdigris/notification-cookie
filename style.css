@@ -1,0 +1,43 @@
+.notification-cookie {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 800px;
+    border: 1px solid #a8a8a8;
+    border-radius: 8px;
+    padding: 6px 18px;
+}
+
+.notification-cookie-txt {
+    margin-right: 18px;
+    font-size: 14px;
+}
+
+.notification-cookie-btn {
+    display: flex;
+    font-size: 12px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 28px;
+    background: #ffcb00;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.notification-cookie-btn:hover {
+    background: #c7a108;
+}
+
+.notification-cookie-link {
+    color: #ffcb00;
+}
+
+.notification-cookie-link:hover {
+    color: #c7a108;
+}
