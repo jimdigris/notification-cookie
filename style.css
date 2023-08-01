@@ -2,14 +2,16 @@
     display: flex;
 	flex-wrap: wrap;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 10px;
-    right: 0px;	
+    left: 0px;	
     max-width: 800px;
     border: 1px solid #a8a8a8;
     border-radius: 8px;
     padding: 6px 18px;
 	margin: 10px;
+    background: #fff;
+    z-index: 100000;	
 }
 
 .notification-cookie-txt {
@@ -27,7 +29,8 @@
     justify-content: center;
     width: 100px;
     height: 28px;
-    background: #ffcb00;
+    background: #DD3F45;
+	color: #fff;
     border: none;
     border-radius: 4px;
     padding: 4px;
@@ -36,15 +39,15 @@
 }
 
 .notification-cookie-btn:hover {
-    background: #c7a108;
+    background: #BF363B;
 }
 
 .notification-cookie-link {
-    color: #ffcb00;
+    color: #DD3F45;
 }
 
 .notification-cookie-link:hover {
-    color: #c7a108;
+    color: #BF363B;
 }
 
 

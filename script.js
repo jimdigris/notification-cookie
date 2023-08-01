@@ -6,12 +6,12 @@
         let class_notification_txt = 'notification-cookie-txt';                                     // css для текста уведомления
         let class_notification_btn = 'notification-cookie-btn';                                     // css для кнопки
         let class_notification_link = 'notification-cookie-link'                                    // css для ссылок
-        let max_age = 10;                                                                           // время жизни куки
-		let link_policy = '\policy';																// ссылка на политику
-		let link_accord = '\accord';																// ссылка на согласие
+        let max_age = 157788000;                                                                    // время жизни куки
+		let link_policy = '/terms';																	// ссылка на политику
+		let link_accord = '/soglasie-obrabotki-personalnyix-dannyix';								// ссылка на согласие
 
         // тело уведомления
-        let notification = `<div class="${class_notification_body}"><p class="${class_notification_txt}">Сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку данных в соответствии с: <a class="${class_notification_link}" href="${link_policy}">Политикой обработки персональных данных</a> и <a class="${class_notification_link}" href="${link_accord}">Согласием на обработку персональных данных</a>.</p> <button class="${class_notification_btn}">OK</button></div>`;
+        let notification = `<div class="${class_notification_body}"><p class="${class_notification_txt}">Сайт использует куки. Продолжая им пользоваться, вы соглашаетесь на обработку данных в соответствии с: <a target="_blank" class="${class_notification_link}" href="${link_policy}">Политикой обработки персональных данных</a> и <a target="_blank" class="${class_notification_link}" href="${link_accord}">Согласием на обработку персональных данных</a>.</p> <button class="${class_notification_btn}">OK</button></div>`;
 
         show_notification(notification);                                                            // показать уведомление
         init_notification_btn(class_notification_btn, class_notification_body, max_age);            // найти кнопку в уведомлении
