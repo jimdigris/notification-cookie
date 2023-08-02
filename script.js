@@ -33,7 +33,7 @@
         }
     }
 
-    function establish_cookie(sec) { document.cookie = `notification_cookie=true; max-age=${sec}`; }    // ! создать куку
+    function establish_cookie(sec) { document.cookie = `notification_cookie=true; path=/; max-age=${sec}`; }    // ! создать куку
 
     function getCookie(name) {                                                                          // ! найти куку
         let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
